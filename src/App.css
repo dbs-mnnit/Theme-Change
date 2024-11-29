@@ -1,0 +1,128 @@
+/* General Layout */
+.container {
+  font-family: "Arial", sans-serif;
+  padding: 16px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.header h1 {
+  color: #2c3e50;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.tab {
+  background-color: #e0e7ff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  color: #4a90e2;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tab.active {
+  background-color: #4a90e2;
+  color: #fff;
+}
+
+.tab:hover {
+  background-color: #b3c7ff;
+}
+
+/* Card Section */
+.card {
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 16px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.card-details {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.btn {
+  background-color: #4a90e2;
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #357ab8;
+}
+
+/* Footer Section */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.footer-icon {
+  font-size: 1.5rem;
+  color: #4a90e2;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-icon:hover {
+  color: #357ab8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    padding: 12px;
+    font-size: 0.85rem;
+  }
+
+  .tab {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  .footer-icon {
+    font-size: 1.2rem;
+  }
+}
